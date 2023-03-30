@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('extraDetail', function (Blueprint $table) {
             $table->biginteger("num_detail");
-            $table->foreignid("num_site");
+            $table->foreignid("num_site")->nullable();
             $table->foreign("num_site")->references("num_s")->on("webSite");
             $table->primary(["num_detail" , "num_site"]) ;
             $table->tinyInteger("newsleeter")->default(0) ;

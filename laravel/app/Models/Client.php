@@ -9,4 +9,5 @@ class Client extends Model
 {
     use HasFactory;
     protected $table="client" ;
+    protected $primaryKey="num_client" ;
 }

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('webSite', function (Blueprint $table) {
             $table->id("num_s");
-            $table->foreignid("num_client");
+            $table->foreignid("num_client")->nullable();
             $table->foreign("num_client")->references("num_client")->on("client");
             $table->string("type");
             $table->string("desgin");

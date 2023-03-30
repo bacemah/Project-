@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('eCommerceModel', function (Blueprint $table) {
             $table->biginteger("num_ecommerce_model");
-            $table->foreignid("num_s");
+            $table->foreignid("num_s")->nullable();
             $table->foreign("num_s")->references("num_s")->on("webSite");
             $table->primary(["num_ecommerce_model","num_s"]) ;
             $table->tinyInteger('product_management')->default(0);
