@@ -9,4 +9,5 @@ class WebSite extends Model
 {
     use HasFactory;
     protected $table="webSite" ;
+    protected $primaryKey="num_s" ;
 }

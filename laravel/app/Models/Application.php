@@ -9,4 +9,5 @@ class Application extends Model
 {
     use HasFactory;
     protected $table= "application" ;
+    protected $primaryKey = "num_application" ;
 }
