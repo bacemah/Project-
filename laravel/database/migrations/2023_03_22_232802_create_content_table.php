@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('content', function (Blueprint $table) {
-            $table->biginteger("num_content");
+            $table->biginteger("num_content"); 
             $table->foreignid("num_site")->nullable();
             $table->foreign("num_site")->references("num_s")->on("webSite");
             $table->primary(["num_content","num_site"]) ;

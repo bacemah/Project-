@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\eCommerceController;
+use App\Http\Controllers\ContentController;
 
 /*
 |--------------------------------------------------------------------------
