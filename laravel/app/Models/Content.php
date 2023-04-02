@@ -9,4 +9,5 @@ class Content extends Model
 {
     use HasFactory;
     protected $table = "content" ;
+    protected $primaryKey="num_content" ;
 }

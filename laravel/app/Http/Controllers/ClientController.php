@@ -38,7 +38,7 @@ class ClientController extends Controller
         $client->first_name =$request->first_name ; 
         $client->last_name =$request->last_name ; 
         $client->number =$request->number ; 
-        $client->messge =$request->message ; 
+        $client->message =$request->message ; 
         $client->save() ;
 
     }

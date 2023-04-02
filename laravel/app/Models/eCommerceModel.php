@@ -9,4 +9,5 @@ class eCommerceModel extends Model
 {
     use HasFactory;
     protected $table = "eCommerceModel" ;
+    protected $primaryKey="num_ecommerce_model" ;
 }

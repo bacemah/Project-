@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string("first_name");
             $table->string("last_name");
             $table->integer("number");
-            $table->text("messge");
+            $table->text("message");
             $table->timestamps();
         });
     }
