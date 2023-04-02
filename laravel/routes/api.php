@@ -5,7 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\WebSiteController;
 use App\Http\Controllers\ApplicationController;
-
+use App\Http\Controllers\DynamicController;
+use App\Http\Controllers\DetailController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -47,3 +48,13 @@ Route::get("/website/search/first",[WebSiteController::class, "first"]) ;
 Route::post("/website/insert",[WebSiteController::class, "insert"]) ;
 Route::post("/website/edit/{id}",[WebSiteController::class, "edit"]) ;
 Route::delete("/website/delete/{id}",[WebSiteController::class, "delete"]) ;
+
+Route::get("/dynamic",[DynamicController::class, "index"]) ;
+Route::post("/dynamic/insert",[DynamicController::class, "insert"]) ;
+Route::post("/dynamic/edit/{id}",[DynamicController::class, "edit"]) ;
+Route::delete("/dynamic/delete/{id}",[DynamicController::class, "delete"]) ;
+
+Route::get("/detail",[DetailController::class, "index"]) ;
+Route::post("/detail/insert",[DetailController::class, "insert"]) ;
+Route::post("/detail/edit/{id}",[DetailController::class, "edit"]) ;
+Route::delete("/detail/delete/{id}",[DetailController::class, "delete"]) ;

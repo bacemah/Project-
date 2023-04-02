@@ -9,4 +9,5 @@ class ExtraDetail extends Model
 {
     use HasFactory;
     protected $table = "extraDetail" ;
+    protected $primarykey = "num_detail" ;
 }
