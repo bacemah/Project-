@@ -1,0 +1,52 @@
+.sectionA{
+    background-color: #f4f4f4;
+}
+.sectionA h2{
+    animation: slidup 2s;
+}
+.left{
+    animation: slidleft 2s;
+}
+.right{
+    animation: slidright 2s;
+}
+@keyframes slidup {
+    from {
+        position: relative;
+        top: 300px;
+        opacity: .2;
+    }
+    to{
+        position: relative;
+        top:0px;
+        opacity: 1;
+    }
+    
+}
+@keyframes slidleft {
+    from{
+        position: relative;
+        left: -150px;
+        opacity: .2;
+    }
+    to{
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slidright {
+    from{
+        position: relative;
+        right: -150px;
+        opacity: .2;
+    }
+    to{ 
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+    
+}

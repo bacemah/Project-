@@ -1,0 +1,32 @@
+.conteneur{
+    display: flex;
+    flex-direction: column ;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+
+}
+.box svg {
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.box p {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    padding:50px;
+    font-family: 'Poppins'  ;
+    background-color:white;
+
+}
+.box p:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.box:hover svg{
+    transform: scale(1.5);
+}
