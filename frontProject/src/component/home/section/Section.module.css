@@ -1,7 +1,10 @@
-.sectionA{
+.section{
     background-color: #f4f4f4;
 }
-.sectionA h2{
+.section h2{
+    animation: slidup 1s;
+}
+.up{
     animation: slidup 2s;
 }
 .left{
@@ -9,6 +12,12 @@
 }
 .right{
     animation: slidright 2s;
+}
+.right1{
+    animation: slidright 3.5s;
+}
+.left1{
+    animation: slidleft 3.5s;
 }
 @keyframes slidup {
     from {

@@ -48,7 +48,7 @@ function SectionA(props){
      },20)
     
     return(
-        <div className={Classes.sectionA +  " d-flex flex-column align-items-center  mx-5 mb-5 pt-3"}>
+        <div className={Classes.section +  " d-flex flex-column align-items-center  mx-5 mb-5 pt-3"}>
             <h2>{props.children}</h2>
             <div className="d-flex flex-column align-items-center">
                 <div className="d-flex">

@@ -7,7 +7,7 @@ function Element(props){
                     {props.svg}
                     <p>
                         {props.id} <br />
-                        Price : 300dt
+                        Price : {props.salaire}dt
                     </p>
                 </div>
             </label>

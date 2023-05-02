@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import Classes from './Home.module.css'
-import SectionA from './section/SectionA'
 import Navbar from './header/Navbar'
+import SectionE from './section/SectionE'
+import SectionD from './section/SectionD'
+import SectionA from './section/SectionA'
+import Bottombar from './header/Bottombar'
 function Home(){
     const [start , setstart] = useState(false)
     const [hidden , setHidden] = useState(false)
@@ -18,9 +21,10 @@ function Home(){
                 <button className="my-5 btn btn-primary" onClick={startOn} hidden={hidden} > Commencer </button>
             </div>
                 { start && 
-                    <SectionA> Website or Application ? </SectionA>
+                    <SectionE>Type de site!</SectionE>
                 }
+            <Bottombar/>
         </section>
     )
 }
-export default Home
+export default Home 

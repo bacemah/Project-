@@ -1,7 +1,6 @@
 .navbar{
     padding: 10px 0px 0px 50px ;
     display: flex;
-    animation: hrwidth 2s;
 }
 .navbar hr {
     width: 93%;
@@ -10,26 +9,6 @@
     padding: 4px;
     background-color: black;
     border-radius: 50%;
-}
-@keyframes hrwidth {
-    from {
-        width: 0px;
-
-    }
-    to {
-        width: 98%;
-
-    }
-}
-@keyframes glisse {
-    from {
-        position: relative;
-        left: auto;
-    }
-    to {
-        position: relative;
-        left: 200px;
-    }
 }
 
 
